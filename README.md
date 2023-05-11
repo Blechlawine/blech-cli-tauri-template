@@ -14,3 +14,4 @@ Features:
     -   Auto-imports for Components and APIs
     -   More Dev-tools with `vite-plugin-inspect` and `vite-plugin-vue-inspector`
 -   Rust backend
+    -   rspc typesafe communication with the frontend
