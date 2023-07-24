@@ -10,6 +10,6 @@ export default function createRspc<T extends ProceduresLike>(): Plugin {
         install(app) {
             app.config.globalProperties.$rspc = client;
             app.provide("rspc", client);
-        }
-    }
+        },
+    };
 }

@@ -9,6 +9,7 @@
         "build": "tauri build",
         "build:frontend": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
+        "format": "rome format --write .",
         "tauri": "tauri"
     },
     "dependencies": {
