@@ -1,14 +1,14 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
-import Inspect from "vite-plugin-inspect";
-import Inspector from "vite-plugin-vue-inspector";
+import VueDevtools from "vite-plugin-vue-devtools";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import Unocss from "unocss/vite";
 
 export default defineConfig({
     plugins: [
+        VueDevtools(),
         vue(),
         Pages(), // file-based routing
         AutoImport({
@@ -23,8 +23,6 @@ export default defineConfig({
             dts: "src/generated/components.d.ts",
         }),
         Unocss(),
-        Inspect(),
-        Inspector(),
     ],
 
     // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`

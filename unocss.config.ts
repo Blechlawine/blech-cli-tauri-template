@@ -16,8 +16,8 @@ export default defineConfig({
         presetTypography(),
         presetIcons({
             extraProperties: {
-                height: "1.3rem",
-                width: "1.3rem",
+                height: "1.2rem",
+                width: "1.2rem",
             },
         }),
     ],
